@@ -22,7 +22,7 @@ const validateString = (str) => {
 		result.style.color = '#cf2323';
 		return (result.textContent = resString);
 	}
-	if (/[a-zA-Z]/.test(strInput)) {
+	if (/[a-zA-Zа-яА-Я]/.test(strInput)) {
 		charFlag = true;
 	} else {
 		res.push('letters');
@@ -32,7 +32,7 @@ const validateString = (str) => {
 	} else {
 		res.push('numbers');
 	}
-	if (/[A-Z]/.test(strInput)) {
+	if (/[A-ZА-Я]/.test(strInput)) {
 		upperCharFlag = true;
 	} else {
 		res.push('uppercase letters');
