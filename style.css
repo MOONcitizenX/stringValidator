@@ -44,6 +44,7 @@ h3 {
 	flex-grow: 4;
 	line-height: 25px;
 	border-radius: 5px;
+	padding-left: 6px;
 }
 
 .flex button {
