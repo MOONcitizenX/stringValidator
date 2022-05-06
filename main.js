@@ -6,7 +6,7 @@ button.addEventListener('click', () => validateString(input.value));
 
 const validateString = (str) => {
 	result.innerHTML = '';
-	let strInput = String(str);
+	let strInput = String(str).trim();
 	let numberFlag = false;
 	let charFlag = false;
 	let upperCharFlag = false;
