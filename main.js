@@ -43,10 +43,10 @@ const validateString = (str) => {
 		res.push('"@"');
 	}
 	if (strInput.length < 5) {
-		res.push('is too SHORT');
+		res.push('is too SHORT (min 5 chars)');
 	}
 	if (strInput.length > 64) {
-		res.push('is too LONG');
+		res.push('is too LONG (max 64 chars)');
 	}
 	if (
 		numberFlag &&
@@ -68,7 +68,7 @@ const validateString = (str) => {
 		notEmptyFlag &&
 		strInput.length < 5
 	) {
-		resString = 'Your string is too SHORT.';
+		resString = 'Your string is too SHORT, min 5 chars.';
 		result.style.color = '#cf2323';
 		return (result.textContent = resString);
 	} else if (
@@ -79,7 +79,7 @@ const validateString = (str) => {
 		notEmptyFlag &&
 		strInput.length > 64
 	) {
-		resString = 'Your string is too LONG.';
+		resString = 'Your string is too LONG, max 64 chars.';
 		result.style.color = '#cf2323';
 		return (result.textContent = resString);
 	} else {
